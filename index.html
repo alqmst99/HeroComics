@@ -11,58 +11,37 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="Style/style.css">
   <script src="https://kit.fontawesome.com/bdfb27d3fb.js" crossorigin="anonymous"></script>
-  <title>Hero Cataloge</title>
+  <script crossorigin="anonymous|use-credentials"></script>
+  <title>Hero Cataloge</title><!--"https://superheroapi.com"-->
 </head>
 
-<body class="d-flex justify-content-center">
-  <main class="main ">
+<body class="">
+  <main class="main">
     <!--init header-->
     <header class="hearder">
       <h2 class="title text-center">
         Super <span>Hero</span> Cataloge
       </h2>
 
-      <form action="" class="search d-flex">
-        <input type="text " class="form-control" placeholder="Search your super Hero here..." name="search">
-        <button type="submit" class="search"><i class="fas fa-search"></i></button>
+      <form class="searchF d-flex d-flex justify-content-center">
+        <input type="text " class="form-control me-2" placeholder="Search your super Hero here..." name="search" style="max-width: 18rem;">
+        <button type="submit" class="search" ><i class="fas fa-search"></i></button>
       </form>
-      <div class="search-list" id="search-list">
+      <div class="search-list" >
 
       </div>
     </header>
     <!--final header-->
-    <article class="body-app">
+    <article class="body-app row">
+     <div class="result-s col col-12  row text-center" id="search-list"></div>
 
     
 
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail"> Details</button>
-      </div>
-    </div>
-    <div class=" modal fade" id="detail" tabindex="-1" aria-labelledby="detail" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered ">
+    <div class=" modal fade" id="detail" tabindex="-1" aria-labelledby="detail" aria-hidden="true"  >
+      <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 100%;">
         <div class="modal-content">
           <div class="card text-center"">
             <div class="card-header">
-              <ul class="nav nav-pills card-header-pills justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link tab1 active" onclick="selectTab1()"  href="#">General</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link tab2" onclick="selectTab2()" href="#">Bio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link tab3" onclick="selectTab3()" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link tab4" onclick="selectTab4()" href="#">Relese</a>
-                </li>
-
-              </ul>
               <div class="content-info justify-content-center">
 
               </div>
@@ -76,6 +55,7 @@
   </main>
   <script src="ajax/main.js"></script>
   <script src="ajax/templates.js"></script>
+  <script src="ajax/hero.js"></script>
 </body>
 
 </html>
