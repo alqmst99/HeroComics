@@ -11,32 +11,14 @@ function result(data){
 
     `
 }
-function detail(data){
-  modal.innerHTML=`
-  
-        <ul class="nav nav-pills card-header-pills justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link tab1 active" onclick="selectTab1(${data.powerstats})"  href="#">PowerStat</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link tab2" onclick="selectTab2(${data.biography})" href="#">Bio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link tab3" onclick="selectTab3(${data.appearance})" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link tab4" onclick="selectTab4(${data})" href="#">Relese</a>
-          </li>
-
-        </ul>`
-}
 
 
-function general(data){
+
+function general(data, img){
     inf.innerHTML= `<div class="card mb-3 " >
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="img-fluid rounded-start" alt="Batman">
+        <img src=${img} class="img-fluid rounded-start" alt="Batman">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -84,12 +66,12 @@ function general(data){
 
 
 
-function Bio(data){
+function bio(data, img){
     inf.innerHTML=`
     <div class="card mb-3 " >
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="img-fluid rounded-start" alt="Batman">
+        <img src=${img} class="img-fluid rounded-start" alt="Batman">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -97,37 +79,37 @@ function Bio(data){
           <ul class= "tab-body-single">
           <li>
           <span>full name: </span>
-          <span> Gorege Humarrallo</span>
+          <span>${data.full-name} </span>
           </li>
           <li>
           <span>alter-egos: </span>
-          <span> no alter egos found.</span>
+          <span>  </span>
           </li>
 
           <li>
           <span>alianses: </span>
-          <span> Batman II, The Tomorrow Knight, Batman Beyond</span>
+          <span>${data.aliases} </span>
           </li>
 
           <li>
           <span>place-of-birth: </span>
-          <span> Gotham City, 25th Century</span>
+          <span></span>
           </li>
 
           <li>
           <span>first apparence: </span>
-          <span> batman Beyond</span>
+          <span> </span>
           </li>
 
           <li>
           <span>publisher: </span>
-          <span>DC Comics </span>
+          <span>${data.publisher} </span>
           </li>
             <ul>
 
 
 
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          
         </div>
       </div>
     </div>
@@ -135,12 +117,12 @@ function Bio(data){
     `
 }
 
-function skill(data){
+function skill(data, img){
     inf.innerHTML=`
     <div class="card mb-3 justify-content-center" >
     <div class="row g-0">
     <div class="col-md-4 aling-item-center img-flit">
-    <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="img-fluid rounded-start" alt="Batman">
+    <img src=${img} class="img-fluid rounded-start" alt="Batman">
   </div>
       <div class="col-md-8 ">
         <div class="card-body">

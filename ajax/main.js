@@ -9,37 +9,37 @@ let res= document.querySelector('.result-s')
 let src= document.querySelector('.searchF')
 let modal= document.querySelector('.card-header')
 
-function selectTab1(data){
+function selectTab1(){
     tab1.classList.add ('active')
     tab2.classList.remove ('active')
     tab3.classList.remove ('active')
     tab4.classList.remove ('active')
     alert('se toco')
-    general(data)
+    
 }
-function selectTab2(data){
+function selectTab2(){
     tab2.classList.add ('active')
     tab1.classList.remove ('active')
     tab3.classList.remove ('active')
     tab4.classList.remove ('active')
     alert('se toco')
-    Bio(data)
+   
 }
-function selectTab3(data){
+function selectTab3(){
     tab3.classList.add ('active')
     tab1.classList.remove ('active')
     tab2.classList.remove ('active')
     tab4.classList.remove ('active')
     alert('se toco')
-    skill(data)
+    
 }
-function selectTab4(data){
+function selectTab4(){
     tab4.classList.add ('active')
     tab1.classList.remove ('active')
     tab2.classList.remove ('active')
     tab3.classList.remove ('active')
     alert('se toco')
-    relese(data)
+    
 }
 
 
