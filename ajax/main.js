@@ -14,7 +14,7 @@ function selectTab1(){
     tab2.classList.remove ('active')
     tab3.classList.remove ('active')
     tab4.classList.remove ('active')
-    alert('se toco')
+  
     
 }
 function selectTab2(){
@@ -22,7 +22,7 @@ function selectTab2(){
     tab1.classList.remove ('active')
     tab3.classList.remove ('active')
     tab4.classList.remove ('active')
-    alert('se toco')
+  
    
 }
 function selectTab3(){
@@ -30,7 +30,7 @@ function selectTab3(){
     tab1.classList.remove ('active')
     tab2.classList.remove ('active')
     tab4.classList.remove ('active')
-    alert('se toco')
+   
     
 }
 function selectTab4(){
@@ -38,8 +38,7 @@ function selectTab4(){
     tab1.classList.remove ('active')
     tab2.classList.remove ('active')
     tab3.classList.remove ('active')
-    alert('se toco')
-    
+  
 }
 
 

@@ -74,20 +74,20 @@ function detail(data1, data2, data3, img) {
          tab1.addEventListener('click', event => {
           
             general(data1, img)
-            alert('anda la bio')
+          
          })
 
       tab2.addEventListener('click', event => {
          bio(data2, img)
-         alert('anda la bio')
+        
       })
       tab3.addEventListener('click', event => {
          skill(data3)
-         alert('anda los Skill')
+         
       })
       tab4.addEventListener('click', event => {
          relese(data1)
-         alert('anda los relese')
+         
       })
    } catch (error) {
       console.log(error)

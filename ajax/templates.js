@@ -22,7 +22,7 @@ function general(data, img){
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"PowerStats</h5>
+          <h5 class="card-title">PowerStats</h5>
           <ul class= "tab-body- single">
           <li>
           <span>Inteligence</span>
@@ -75,7 +75,7 @@ function bio(data, img){
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"biography</h5>
+          <h5 class="card-title">biography</h5>
           <ul class= "tab-body-single">
           <li>
           <span>full name: </span>
@@ -143,6 +143,7 @@ function skill(data, img){
 
 function relese(data){
     inf.innerHTML= `
+    <h5 class="card-title">Relese</h5>
     <div class="card justify-content-center" style="width: 10rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
