@@ -43,7 +43,7 @@ body{
 }
 .img-pre{
   
-  animation: present  10s;
+  animation: present  10s infinite;
 }
 @keyframes present {
   0% {
