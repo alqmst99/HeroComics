@@ -5,10 +5,7 @@ async function allSuperH(hero) {
       let responce = await fetch(url, {
          method: 'POST',
          mode: 'no-cors',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-         body: JSON.stringify({ foo: 'bar' }),
+       
        });
       let resquest = await responce.json()
       let data = resquest.results;
