@@ -3,11 +3,13 @@ async function allSuperH(hero) {
    let url = `https://superheroapi.com/api/6878269665535139/search/${hero}`
    try {
       let responce = await fetch(url, {
-         'mode': 'cors',
-         'headers': {
-             'Access-Control-Allow-Origin': '*',
-         }
-     })
+         method: 'POST',
+         mode: 'no-cors',
+         headers: {
+           'Content-Type': 'application/json',
+         },
+         body: JSON.stringify({ foo: 'bar' }),
+       });
       let resquest = await responce.json()
       let data = resquest.results;
      
