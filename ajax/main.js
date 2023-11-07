@@ -9,6 +9,7 @@ let res= document.querySelector('.result-s')
 let src= document.querySelector('.searchF')
 let modal= document.querySelector('.card-header')
 
+
 function selectTab1(){
     tab1.classList.add ('active')
     tab2.classList.remove ('active')
@@ -32,13 +33,6 @@ function selectTab3(){
     tab4.classList.remove ('active')
    
     
-}
-function selectTab4(){
-    tab4.classList.add ('active')
-    tab1.classList.remove ('active')
-    tab2.classList.remove ('active')
-    tab3.classList.remove ('active')
-  
 }
 
 

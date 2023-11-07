@@ -1,5 +1,6 @@
 function result(data){
-    return `
+
+  return `
    
     <div class="card " style="width: 18rem;">
     <img src=${data.image.url} class="card-img-top" alt="${data.name}">
@@ -10,6 +11,18 @@ function result(data){
   </div>
 
     `
+
+}
+
+
+function noneF(){
+  return` 
+  <div class="img-non">
+        <figure>
+          <img class="mx-auto d-block" src="/Assets/not-found-H.jpg" alt="Not-Found-Heros">
+        </figure>
+      </div>
+  `
 }
 
 
@@ -56,7 +69,7 @@ function general(data, img){
 
 
 
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+       
         </div>
       </div>
     </div>
@@ -78,31 +91,31 @@ function bio(data, img){
           <h5 class="card-title">biography</h5>
           <ul class= "tab-body-single">
           <li>
-          <span>full name: </span>
-          <span>${data.full-name} </span>
+          <span<b>Full Name: </b>: </span>
+          <span>${data.fullName} </span>
           </li>
           <li>
-          <span>alter-egos: </span>
+          <span><b>Alter-egos:</b> </span>
           <span>  </span>
           </li>
 
           <li>
-          <span>alianses: </span>
+          <span><b>Alianses: </b></span>
           <span>${data.aliases} </span>
           </li>
 
           <li>
-          <span>place-of-birth: </span>
+          <span><b>Place-of-birth: </b></span>
           <span></span>
           </li>
 
           <li>
-          <span>first apparence: </span>
+          <span><b>First apparence: </b></span>
           <span> </span>
           </li>
 
           <li>
-          <span>publisher: </span>
+          <span><b>Publisher</b>: </span>
           <span>${data.publisher} </span>
           </li>
             <ul>
@@ -126,14 +139,16 @@ function skill(data, img){
   </div>
       <div class="col-md-8 ">
         <div class="card-body">
-          <h5 class="card-title">Skills or Habilities</h5>
+          <h5 class="card-title">Appearance</h5>
           <ul class="justify-content-center">
-            <li><p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></li>
-            <li><p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></li>
-            <li><p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p></li>
+            <li><b>Gender</b>: ${data.gender} </p></li>
+            <li><p class="card-text"><b>Race</b>: ${data.race}.</p></li>
+            <li><p class="card-text"><b>Height</b>: ${data.height}.</p></li>
+            <li><p class="card-text"><b>Weight</b>: ${data.weight}.</p></li>
+                      
             </ul>
           
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+       
         </div>
       </div>
     </div>
@@ -141,14 +156,5 @@ function skill(data, img){
     `
 }
 
-function relese(data){
-    inf.innerHTML= `
-    <h5 class="card-title">Relese</h5>
-    <div class="card justify-content-center" style="width: 10rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    `
-}
+
 

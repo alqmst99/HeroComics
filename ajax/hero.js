@@ -4,11 +4,14 @@ async function allSuperH(hero) {
    try {
       let responce = await fetch(url)
       let resquest = await responce.json()
-      let data = resquest.results
-
+      let data = resquest.results;
+     
       console.log(data);
+      if(data !== undefined){ 
       showResult(data);
-
+      }else{
+         noneF()
+      }
 
    } catch (error) {
       console.log(error)
@@ -28,6 +31,7 @@ src.addEventListener('submit', (event) => {
 });
 res.innerHTML = ``
 const showResult = (data) => {
+   let present = document.querySelector('.img-pre')
    data.forEach(dataI => {
       const divE = document.createElement('div')
       divE.classList.add('result')
@@ -38,15 +42,17 @@ const showResult = (data) => {
 
       divE.innerHTML = result(dataI)
       res.appendChild(divE)
-
+      present.classList.add('d-none')
    })
 }
 res.addEventListener('click', event => {
+   let present = document.querySelector('.img-pre')
    if (event.target.tagName == "BUTTON") {
       const element = event.target;
       const id = element.getAttribute("data-id");
       console.log(id)
       getHero(id);
+    
    }
 })
 async function getHero(id) {
@@ -82,11 +88,11 @@ function detail(data1, data2, data3, img) {
         
       })
       tab3.addEventListener('click', event => {
-         skill(data3)
+         skill(data3, img)
          
       })
       tab4.addEventListener('click', event => {
-         relese(data1)
+         relese(data1, img)
          
       })
    } catch (error) {

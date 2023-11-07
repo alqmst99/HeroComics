@@ -1,9 +1,12 @@
 body{
+  width: 95% !important;
+  align-content: center;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,59,144,1) 50%, rgba(0,0,0,1) 100%);
 }
 .card{
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,4,4,1) 50%, rgba(0,0,0,1) 100%);
     color: greenyellow;
+ 
 }
 .modal-lg, .content-info{
     max-width: 1000px !important;
@@ -38,3 +41,49 @@ body{
 .modal{
     border-radius: 10% !important;
 }
+.img-pre{
+  
+  animation: present  10s;
+}
+@keyframes present {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  50% {
+      display: block;
+      opacity: 1;
+  }
+
+  100% {
+      display: none;
+      opacity: 0;
+  }
+}
+.card:hover{
+  border-radius: 15px;
+  width: 100% !important;
+animation: select 5s linear infinite;
+}
+@keyframes select {
+  0% {
+    background: linear-gradient(90deg, rgb(113, 0, 96) 0%, rgba(255,4,4,1) 50%, rgb(113, 0, 96) 100%);
+    color: greenyellow;
+ 
+     
+  }
+
+  50%{
+    background: linear-gradient(90deg, rgb(122, 2, 2) 0%, rgb(113, 0, 96) 50%, rgb(122, 2, 2) 100%);
+    color: greenyellow;
+  }
+
+  100% {
+    background: linear-gradient(90deg, rgb(113, 0, 96) 0%, rgb(126, 3, 3) 50%, rgb(113, 0, 96) 100%);
+    color: greenyellow;
+    
+  }}
+  .card-img-top:hover{
+    border-radius: 15px;
+  }
