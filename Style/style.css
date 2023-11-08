@@ -64,7 +64,7 @@ body{
 .card:hover{
   border-radius: 15px;
   width: 100% !important;
-animation: select 0.5s linear infinite;
+animation: select 0.1s linear infinite;
 }
 @keyframes select {
   0% {
@@ -75,12 +75,12 @@ animation: select 0.5s linear infinite;
   }
 
   50%{
-    background: linear-gradient(90deg, rgb(122, 2, 2) 0%, rgb(113, 0, 96) 50%, rgb(122, 2, 2) 100%);
+    background: linear-gradient(90deg, rgba(255,4,4,1) 0%, rgb(113, 0, 96) 50%, rgba(255,4,4,1) 100%);
     color: greenyellow;
   }
 
   100% {
-    background: linear-gradient(90deg, rgb(113, 0, 96) 0%, rgb(126, 3, 3) 50%, rgb(113, 0, 96) 100%);
+    background: linear-gradient(90deg, rgb(113, 0, 96) 0%, rgba(255,4,4,1) 50%, rgb(113, 0, 96) 100%);
     color: greenyellow;
     
   }}
