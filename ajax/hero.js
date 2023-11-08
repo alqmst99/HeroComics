@@ -1,6 +1,6 @@
 //search capture input
 async function allSuperH(hero) {
-   let url = `https://www.superheroapi.com/api/6878269665535139/search/${hero}`
+   let url = `https://superheroapi.com/api/6878269665535139/search/${hero}`
    try {
       let res = await fetch(url, {
          method: 'POST',
