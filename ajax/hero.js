@@ -6,7 +6,7 @@ async function allSuperH(hero) {
          method: 'POST',
          mode: 'no-cors',
        
-       });
+       })
       let resquest = await responce.json()
       let data = resquest.results;
      
