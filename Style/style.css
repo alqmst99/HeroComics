@@ -64,7 +64,7 @@ body{
 .card:hover{
   border-radius: 15px;
   width: 100% !important;
-animation: select 5s linear infinite;
+animation: select 0.5s linear infinite;
 }
 @keyframes select {
   0% {
