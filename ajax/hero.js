@@ -1,6 +1,6 @@
 //search capture input
 async function allSuperH(hero) {
-   let url = `https://superheroapi.com/api/6878269665535139/search/${hero}`
+   let url = `https://www.superheroapi.com/api/6878269665535139/search/${hero}`
    try {
       let responce = await fetch(url, {
          method: 'POST',
@@ -60,7 +60,7 @@ res.addEventListener('click', event => {
    }
 })
 async function getHero(id) {
-   const api = `https://superheroapi.com/api/6878269665535139/${id}`
+   const api = `https://www.superheroapi.com/api/6878269665535139/${id}`
    const request = await fetch(api)
    const responce = await request.json()
    const dataS = responce.powerstats
