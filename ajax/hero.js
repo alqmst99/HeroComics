@@ -7,7 +7,7 @@ async function allSuperH(hero) {
          mode: 'no-cors',
        
        })
-      let resquest = await responce.json()
+      let resquest = await responce.json().parse("")
       let data = resquest.results;
      
       console.log(data);
