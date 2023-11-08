@@ -2,12 +2,8 @@
 async function allSuperH(hero) {
    let url = `https://www.superheroapi.com/api/6878269665535139/search/${hero}`
    try {
-      let responce = await fetch(url, {
-         method: 'POST',
-         mode: 'no-cors',
-       
-       })
-      let resquest = await responce.json().parse("")
+      let responce = await fetch(url)
+      let resquest = await responce.json()
       let data = resquest.results;
      
       console.log(data);
